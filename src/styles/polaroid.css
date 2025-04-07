@@ -1,0 +1,183 @@
+/* Общие стили для Polaroid */
+.polaroid-block {
+  display: flex;
+  margin: 3rem auto;
+  max-width: 900px;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 20px;
+  justify-content: space-evenly;
+  font-family: "Comic Sans MS", sans-serif;
+}
+
+/* Контейнер для Polaroid-фото */
+.polaroid-frame {
+  background-image: url("../images/paper-texture.jpg");
+  /* background-position: center; */
+  /* background: white; */
+  padding: 15px 15px 40px 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+/* Фото внутри Polaroid  */
+.polaroid-image {
+  width: 100%;
+  max-width: 450px;
+  max-height: 600px;
+  height: auto;
+  display: block;
+  border: 1px solid #eee;
+  transition: all 0.5s ease;
+
+  /* Изначально чёрно-белое с лёгкой сепией */
+  filter: grayscale(90%) sepia(10%) contrast(110%);
+  transform: scale(1);
+}
+
+/* Эффект при наведении */
+.polaroid-block:hover .polaroid-image {
+  /* Полноцветный режим */
+  filter: grayscale(0%) sepia(0%) contrast(100%) saturate(110%);
+
+  /* Лёгкое увеличение */
+  transform: scale(1.02);
+
+  /* Тёплый бирюзовый отблеск */
+  box-shadow: 0 0 15px rgba(78, 205, 196, 0.3);
+}
+
+/* Дополнительные улучшения для плавности */
+.polaroid-frame {
+  overflow: hidden; /* Чтобы увеличенное фото не выходило за рамки */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.polaroid-frame:hover {
+  transform: rotate(-1deg) translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 20px rgba(78, 205, 196, 0.2);
+}
+/* Подпись под фото */
+.polaroid-caption {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  /* font-family: "Playfair Display", serif; */
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.polaroid-frame:hover .polaroid-caption {
+  color: #2a9d8f; /* Бирюзовый цвет */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Стили для текстовых блоков */
+.polaroid-description {
+  background: rgba(255, 253, 245, 0.9); /* Тёплый кремовый фон */
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #4ecdc4; /* Бирюзовая акцентная полоса */
+  position: relative;
+  max-width: 400px;
+}
+
+.polaroid-block.right .polaroid-description {
+  border-left: none;
+  border-right: 4px solid #4ecdc4; /* Акцент справа для правых блоков */
+}
+
+.polaroid-description h3 {
+  position: absolute;
+  top: -2rem;
+  left: 1rem;
+  /* font-family: "Playfair Display", serif; */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #4ecdc4; /* Бирюзовый акцент */
+  background: rgba(255, 253, 245, 0.9); /* Тёплый кремовый фон */
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  /* color: #2a9d8f; Тёплый бирюзовый */
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.polaroid-description p {
+  color: #555;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* Декоративные уголки */
+.polaroid-description::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  background: #4ecdc4;
+  transform: rotate(45deg);
+  z-index: -1;
+  opacity: 0.3;
+}
+
+.polaroid-block.right .polaroid-description::before {
+  left: auto;
+  right: 10px;
+}
+
+/* Поворот фото */
+.polaroid-block.left .polaroid-frame {
+  transform: rotate(-3deg);
+}
+.polaroid-block.right .polaroid-frame {
+  transform: rotate(3deg);
+}
+
+/* Центральный Polaroid (без текста) */
+.polaroid-block.center {
+  justify-content: center;
+}
+.polaroid-block.center .polaroid-frame {
+  transform: rotate(0);
+  max-width: 500px;
+}
+
+/* Финальный Polaroid */
+.final-slide .polaroid-frame {
+  max-width: 600px;
+  margin: 0 auto;
+  transform: rotate(0);
+}
+.final-slide .polaroid-caption {
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .polaroid-block {
+    flex-direction: column;
+  }
+  .polaroid-block.left .polaroid-frame,
+  .polaroid-block.right .polaroid-frame {
+    transform: rotate(0);
+  }
+
+  .right {
+    flex-direction: column-reverse;
+  }
+}
