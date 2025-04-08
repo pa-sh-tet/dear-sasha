@@ -19,7 +19,7 @@ const PolaroidLeft = ({ year, age, description, photo, delay }) => {
         </div>
       </div>
       <div className="polaroid-description">
-        <h3>{year}</h3>
+        {/* <h3>{year}</h3> */}
         <p>{description}</p>
       </div>
     </div>

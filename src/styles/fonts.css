@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "berton-voyage";
+  src: url("../fonts/berton-voyage.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Shantell Sans";
+  src: url("../fonts/ShantellSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

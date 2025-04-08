@@ -21,6 +21,23 @@
   transition: transform 0.3s ease;
 }
 
+.center-final {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px 60px 10px;
+}
+
+.center-final .polaroid-image {
+  filter: none;
+}
+
+.center-final .polaroid-frame {
+  transform: rotate(-1deg) translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 20px rgba(78, 205, 196, 0.2);
+}
+
 /* Фото внутри Polaroid  */
 .polaroid-image {
   width: 100%;
@@ -62,12 +79,12 @@
 /* Подпись под фото */
 .polaroid-caption {
   position: absolute;
-  bottom: 10px;
+  bottom: 5px;
   left: 0;
   right: 0;
   text-align: center;
-  /* font-family: "Playfair Display", serif; */
-  font-size: 1.5rem;
+  font-family: "berton-voyage", serif;
+  font-size: 1.4rem;
   color: #333;
 }
 
@@ -97,7 +114,6 @@
   position: absolute;
   top: -2rem;
   left: 1rem;
-  /* font-family: "Playfair Display", serif; */
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 700;
@@ -108,7 +124,6 @@
   border-radius: 4px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   z-index: 1;
-  /* color: #2a9d8f; Тёплый бирюзовый */
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
   font-weight: 700;
@@ -118,6 +133,7 @@
   color: #555;
   line-height: 1.6;
   font-size: 1.1rem;
+  font-family: "Shantell Sans", serif;
 }
 
 /* Декоративные уголки */
@@ -179,5 +195,11 @@
 
   .right {
     flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 450px) {
+  .center-final .polaroid-caption {
+    font-size: 1rem;
   }
 }

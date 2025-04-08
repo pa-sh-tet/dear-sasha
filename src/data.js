@@ -13,18 +13,19 @@ import img_8_1_years from "../src/images/8.1.jpg";
 import img_8_2_years from "../src/images/8.2.jpg";
 import img_9_1_years from "../src/images/9.1.jpg";
 import img_9_2_years from "../src/images/9.2.jpg";
-import img_10_1_years from "../src/images/10.1.jpg";
+// import img_10_1_years from "../src/images/10.1.jpg";
 import img_10_2_years from "../src/images/10.2.jpg";
 import img_10_3_years from "../src/images/10.3.jpg";
 import img_10_4_years from "../src/images/10.4.jpg";
 import img_11_1_years from "../src/images/11.1.jpg";
 import img_11_2_years from "../src/images/11.2.jpg";
-import img_11_3_years from "../src/images/11.3.jpg";
-import img_11_4_years from "../src/images/11.4.jpg";
+// import img_11_3_years from "../src/images/11.3.jpg";
+// import img_11_4_years from "../src/images/11.4.jpg";
 import img_11_5_years from "../src/images/11.5.jpg";
 import img_11_6_years from "../src/images/11.6.jpg";
 import img_12_years from "../src/images/12.jpg";
 import img_13_years from "../src/images/13.jpg";
+import img_13_2_years from "../src/images/13.2.jpg";
 import img_14_years from "../src/images/14.jpg";
 import img_15_1_years from "../src/images/15.1.jpg";
 import img_15_2_years from "../src/images/15.2.jpg";
@@ -34,11 +35,27 @@ import img_17_2_years from "../src/images/17.2.jpg";
 import img_18_years from "../src/images/18.jpg";
 import img_19_1_years from "../src/images/19.1.jpg";
 import img_19_2_years from "../src/images/19.2.jpg";
+import img_20_1_years from "../src/images/20.1.jpg";
 import img_21_years from "../src/images/21.jpg";
 import img_25_years from "../src/images/25.jpg";
 import img_26_1_years from "../src/images/26.1.jpg";
 import img_26_2_years from "../src/images/26.2.jpg";
-import img_28_years from "../src/images/28.jpg";
+// import img_26_3_years from "../src/images/26.3.jpg";
+import img_27_1_years from "../src/images/27.1.jpg";
+import img_28_3_years from "../src/images/28.3.jpg";
+import img_28_1_years from "../src/images/28.1.jpg";
+import img_28_2_years from "../src/images/28.2.jpg";
+import img_28_4_years from "../src/images/28.4.jpg";
+import img_29_1_years from "../src/images/29.1.jpg";
+import img_29_2_years from "../src/images/29.2.jpg";
+import img_29_3_years from "../src/images/29.3.jpg";
+import img_16_2_years from "../src/images/16.2.jpg";
+import img_17_3_years from "../src/images/17.3.jpg";
+import img_21_2_years from "../src/images/21.2.jpg";
+import img_22_1_years from "../src/images/22.1.jpg";
+import img_23_1_years from "../src/images/23.1.jpg";
+import img_24_1_years from "../src/images/24.1.jpg";
+import img_24_2_years from "../src/images/24.2.jpg";
 
 export const yearsData = [
   {
@@ -65,7 +82,7 @@ export const yearsData = [
     year: "1997",
     age: 2,
     description:
-      "первый осознанный день рождения ❤️из гостей только Ваня, первый друг👌",
+      "Первый осознанный день рождения ❤️из гостей только Ваня, первый друг👌",
     photo: img_2_years,
   },
   // {
@@ -179,12 +196,6 @@ export const yearsData = [
   //   description: "Дача, Переволоки. Большая часть детства прошла именно там)",
   //   photo: img_11_3_years,
   // },
-  // {
-  //   year: "2006",
-  //   age: 11,
-  //   description: "Дача, Переволоки. Большая часть детства прошла именно там)",
-  //   photo: img_11_4_years,
-  // },
   {
     year: "2006",
     age: 11,
@@ -204,6 +215,12 @@ export const yearsData = [
     description:
       "Поездка на машине в Питер. Всю дорогу пели песни Наутилус Пампилус. Берег Финского залива в Петергофе.",
     photo: img_12_years,
+  },
+  {
+    year: "2008",
+    age: 13,
+    description: "Love you to the moon and back, sis 💝",
+    photo: img_13_2_years,
   },
   {
     year: "2008",
@@ -237,6 +254,18 @@ export const yearsData = [
     photo: img_16_years,
   },
   {
+    year: "2011",
+    age: 16,
+    description: "Ниагарский водопад",
+    photo: img_16_2_years,
+  },
+  {
+    year: "2012",
+    age: 17,
+    description: "Нью Йорк",
+    photo: img_17_3_years,
+  },
+  {
     year: "2012",
     age: 17,
     description: "Благодаря тебе в нашей жизни появился Вальтер👍",
@@ -268,10 +297,46 @@ export const yearsData = [
     photo: img_19_2_years,
   },
   {
+    year: "2015",
+    age: 20,
+    description: "2-ой курс",
+    photo: img_20_1_years,
+  },
+  {
     year: "2016",
     age: 21,
     description: "С бабушкой Люсей две хохотушки🤗",
     photo: img_21_years,
+  },
+  {
+    year: "2016",
+    age: 21,
+    description: "Море",
+    photo: img_21_2_years,
+  },
+  {
+    year: "2016",
+    age: 22,
+    description: "Италия",
+    photo: img_22_1_years,
+  },
+  {
+    year: "2018",
+    age: 23,
+    description: "Красавица❤️",
+    photo: img_23_1_years,
+  },
+  {
+    year: "2019",
+    age: 24,
+    description: "Дружьа",
+    photo: img_24_1_years,
+  },
+  {
+    year: "2019",
+    age: 24,
+    description: "Париж",
+    photo: img_24_2_years,
   },
   {
     year: "2020",
@@ -282,25 +347,73 @@ export const yearsData = [
   {
     year: "2021",
     age: 26,
-    description: "Ты лучший руководитель школы английского😍",
+    description: "Ты самая любимая внучка💫",
     photo: img_26_1_years,
   },
   {
     year: "2021",
     age: 26,
-    description: "Ты самая любимая внучка💫",
+    description: "Ты лучший руководитель школы английского😍",
     photo: img_26_2_years,
+  },
+  // {
+  //   year: "2021",
+  //   age: 26,
+  //   description: "Само очарование 🤩",
+  //   photo: img_26_3_years,
+  // },
+  {
+    year: "2022",
+    age: 27,
+    description: "Ты много путешествуешь 🌏",
+    photo: img_27_1_years,
+  },
+  {
+    year: "2023",
+    age: 28,
+    description: "С Лёшей ❤️",
+    photo: img_28_4_years,
+  },
+  {
+    year: "2023",
+    age: 28,
+    description: "Блистательная",
+    photo: img_28_1_years,
+  },
+  {
+    year: "2023",
+    age: 28,
+    description: "NY  ты исполнила свою мечту снова побывать здесь🌆",
+    photo: img_28_2_years,
   },
   {
     year: "2023",
     age: 28,
     description: "Как здорово мы все провели время благодаря тебе🤗",
-    photo: img_28_years,
+    photo: img_28_3_years,
   },
   {
-    year: "2025",
-    age: 30,
-    description: "30 лет — и это только начало...",
-    photo: "",
+    year: "2024",
+    age: 29,
+    description: "Счастье всей твоей жизни✨",
+    photo: img_29_2_years,
   },
+  {
+    year: "2024",
+    age: 29,
+    description: "Your little prince",
+    photo: img_29_3_years,
+  },
+  {
+    year: "2024",
+    age: 29,
+    description: "Ты многого достигла🔥мы очень тобой гордимся❤️",
+    photo: img_29_1_years,
+  },
+  // {
+  //   year: "2025",
+  //   age: 30,
+  //   description: "30 лет — и это только начало...",
+  //   photo: "",
+  // },
 ];

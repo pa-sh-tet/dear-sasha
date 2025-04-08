@@ -7,7 +7,7 @@ const PolaroidRight = ({ year, age, description, photo, delay }) => {
       style={{ animation: `fadeIn 0.5s ease-in-out ${delay}s both` }}
     >
       <div className="polaroid-description">
-        <h3>{year}</h3>
+        {/* <h3>{year}</h3> */}
         <p>{description}</p>
       </div>
       <div className="polaroid-photo-container">
